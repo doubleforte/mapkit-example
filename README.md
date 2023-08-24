@@ -1,27 +1,17 @@
-# React + TypeScript + Vite
+# Example Using react-mapkit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://github.com/chrisdrackett/react-mapkit
 
-Currently, two official plugins are available:
+This is an out-of-the-box Vite (React + TypeScript) project. The only thing I added was `src/MapkitExample.tsx` which is used in `src/App.tsx`. When running, the app crashes with this error:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```
+Failed to resolve entry for package "react-mapkit". The package may have incorrect main/module/exports specified in its package.json.
+9:36:56 AM [vite] Internal server error: Failed to resolve entry for package "react-mapkit". The package may have incorrect main/module/exports specified in its package.json.
+  Plugin: vite:import-analysis
+  File: src/MapkitExample.tsx
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To run:
+
+1. `$ yarn install --frozen-lockfile`
+2. `$ yarn dev`
