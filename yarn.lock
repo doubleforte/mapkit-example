@@ -1131,6 +1131,11 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
+little-loader@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/little-loader/-/little-loader-0.2.0.tgz#d572b842ab95ab6fab40571f79514ad49ab8d9bd"
+  integrity sha512-MYNYfBqP/f5C7XO6MR2cylmAzAKgBkDD1UGZ4KjxFviV3mKbjOEnxVj1nhnN3i2zcwbkPeUDsjAMjLnlL9kRLA==
+
 locate-path@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-6.0.0.tgz#55321eb309febbc59c4801d931a72452a681d286"
@@ -1305,6 +1310,13 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-mapkit@^0.6.6:
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/react-mapkit/-/react-mapkit-0.6.6.tgz#53307c129704fd197e9a3ae4c71848709c9466fa"
+  integrity sha512-rxE8Q8NHHyzFOdV1XO0V7vws15/V0twSX4GDsIIt8wnOaNvFLkianLJE2LuoMQSUStml1dkkpXQyUaYXMBqFNA==
+  dependencies:
+    little-loader "^0.2.0"
 
 react-refresh@^0.14.0:
   version "0.14.0"
